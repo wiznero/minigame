@@ -23,7 +23,7 @@ conn.commit()
 preguntas = [
     {
         "pregunta": "¿Cual es la capital de Portugal?",
-        "opciones": {"A": "Madrid", "B": "Lisboa", "C": "dublin"},
+        "opciones": {"A": "Madrid", "B": "Lisboa", "C": "rio de janeiro"},
         "respuesta": "B"
     },
     {
