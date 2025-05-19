@@ -61,7 +61,7 @@ def mostrar_pregunta1(nombre_jugador,indice):
 
     def responder(eleccion):
         if eleccion == datos["respuesta"]:
-            cursor.execute("UPDATE jugadores SET puntuacion = puntuacion + 10 WHERE nombre = ?", (nombre_jugador,))
+            cursor.execute("UPDATE jugadores SET puntuacion = puntuacion + 100 WHERE nombre = ?", (nombre_jugador,))
             conn.commit()
         ventana.destroy()
         mostrar_pregunta2(nombre_jugador, indice + 1)
@@ -87,7 +87,7 @@ def mostrar_pregunta2(nombre_jugador,indice):
 
     def responder(eleccion):
         if eleccion == datos["respuesta"]:
-            cursor.execute("UPDATE jugadores SET puntuacion = puntuacion + 10 WHERE nombre = ?", (nombre_jugador,))
+            cursor.execute("UPDATE jugadores SET puntuacion = puntuacion + 100 WHERE nombre = ?", (nombre_jugador,))
             conn.commit()
         ventana.destroy()
         mostrar_pregunta2(nombre_jugador, indice + 1)
