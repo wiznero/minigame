@@ -38,6 +38,7 @@ preguntas = [
     }
 ]
 
+# funcion para comenzar el juego
 def comenzar_juego():
     nombre = entrada_nombre.get().strip()
     if nombre:
@@ -49,6 +50,7 @@ def comenzar_juego():
     else:
         label_mensaje.config(text="Por favor introduce un nombre")
 
+# funcion para mostrar la pregunta 1
 def mostrar_pregunta1(nombre_jugador,indice):
     if indice >= len(preguntas):
         print("juego acabado")
@@ -74,7 +76,7 @@ def mostrar_pregunta1(nombre_jugador,indice):
         texto = f"{clave} {valor}"
         tk.Button(ventana,text=texto, command=lambda:responder(clave),width=30).pack(pady=5)
 
-
+# mostrar pregunta 2
 def mostrar_pregunta2(nombre_jugador,indice):
     if indice >= len(preguntas):
         print("juego acabado")
