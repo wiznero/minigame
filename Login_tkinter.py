@@ -38,7 +38,7 @@ preguntas = [
     }
 ]
 
-# funcion para comenzar el juego
+# PATATAS FRITAS
 def comenzar_juego():
     nombre = entrada_nombre.get().strip()
     if nombre:
